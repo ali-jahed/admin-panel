@@ -1,0 +1,51 @@
+# -------------------------
+# Frontend (Vite + React)
+# -------------------------
+admin-frontend/node_modules/
+admin-frontend/dist/
+admin-frontend/.vite/
+admin-frontend/.env
+admin-frontend/.env.local
+admin-frontend/.DS_Store
+
+# -------------------------
+# Backend (Node + Express)
+# -------------------------
+admin-backend/node_modules/
+admin-backend/.env
+admin-backend/.env.local
+admin-backend/logs/
+admin-backend/uploads/
+admin-backend/.DS_Store
+
+# -------------------------
+# General (root)
+# -------------------------
+.env
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+out/
+coverage/
+
+# Optional: PM2 logs
+pids
+*.pid
+*.seed
+*.pid.lock
