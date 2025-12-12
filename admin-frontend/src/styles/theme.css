@@ -1,0 +1,80 @@
+/* LIGHT THEME */
+:root[data-theme="light"] {
+  --brand-primary: #4b4ded;
+  --brand-primary-2: #3b3cc0;
+  --brand-secondary: #ff4fb7;
+  --brand-accent: #22e2a5;
+
+  --text-dark: #001233;
+  --text-light-1: #4d5875;
+  --text-light-2: #667599;
+  --text-light-3: #98a1bd;
+
+  --surface-background: #f6f7fb;
+  --surface-neutral: #ffffff;
+  --surface-border: #e3e6ef;
+}
+
+/* DARK THEME */
+:root[data-theme="dark"] {
+  --brand-primary: #5b5bf9;
+  --brand-primary-2: #7e7fff;
+  --brand-secondary: #ff68c4;
+  --brand-accent: #27f5b5;
+
+  --text-light-1: #d1d3e0;
+  --text-light-2: #a7a9c5;
+  --text-light-3: #8a8ead;
+
+  --surface-background: #1b1c30;
+  --surface-neutral: #23243a;
+  --surface-border: #2f3045;
+}
+
+/* Global */
+body {
+  background: var(--surface-background);
+  color: var(--text-dark);
+  transition: 0.25s ease;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: var(--surface-neutral);
+  border-right: 1px solid var(--surface-border);
+  min-height: 100vh;
+  transition: 0.25s ease;
+}
+
+.sidebar .brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--brand-primary);
+}
+
+.sidebar a {
+  color: var(--text-light-1);
+  margin-bottom: 10px;
+}
+
+/* Topbar */
+.topbar {
+  background: var(--surface-neutral);
+  border-bottom: 1px solid var(--surface-border);
+  transition: 0.25s;
+}
+
+/* Main container */
+.app-root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-light-1);
+  transition: 0.25s;
+}
+p, span, li, a {
+  color: var(--text-light-1);
+  transition: 0.25s;
+}
